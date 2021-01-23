@@ -1,0 +1,20 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto bancário, bytebank.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vyctoriak/poo-js.git"
+  },
+  "author": "Vyctoria Karina",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/vyctoriak/poo-js/issues"
+  },
+  "homepage": "https://github.com/vyctoriak/poo-js#readme"
+}
