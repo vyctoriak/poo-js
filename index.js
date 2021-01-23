@@ -1,4 +1,4 @@
-class Cliente{
+class Cliente {
   nome;
   cpf;
 }
@@ -8,17 +8,18 @@ class ContaCorrente {
   #saldo = 0;
 
   saque(valor) {
-      if(this.#saldo >= valor) {
-          this.#saldo -=  valor;
-          return valor;
-      }
+    if (this.#saldo >= valor) {
+      this.#saldo -= valor;
+      return valor;
+    }
   }
 
   depositar(valor) {
-      if(valor>0) {
-          this.#saldo += valor;
-          console.log(`Seu saldo é de R$${this.#saldo}`);
-      }
+    if (valor <= 0) {
+      return;
+    }
+    this.#saldo += valor;
+    console.log(`Seu saldo é de R$${this.#saldo}`);
   }
 
 }
@@ -39,6 +40,8 @@ contaCorrenteRicardo.depositar(100);
 contaCorrenteRicardo.depositar(100);
 
 const valorSacado = contaCorrenteRicardo.saque(50);
-console.log(valorSacado);
+const valorSacado2 = contaCorrenteRicardo.saque(20);
 
+console.log(valorSacado);
+console.log(valorSacado2);
 console.log(contaCorrenteRicardo);
